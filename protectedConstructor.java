@@ -7,9 +7,15 @@ class Book {
     BookName = name;
   }
 }
+class BookName extends Book{
+    BookName(int id,String name){
+        super(id,name);
+    }
+    
+}
 public class Main{
   public static void main(String[] args) {
-    Book book = new Book(21, "english");
+    BookName book = new BookName(21, "english");
     System.out.println(book.bookID + " " + book.BookName);
   }
 }
